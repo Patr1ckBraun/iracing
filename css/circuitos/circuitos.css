@@ -1,0 +1,613 @@
+body {
+    overflow-x: hidden; 
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+body{
+    overflow-x: hidden; 
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+    background-image: url(../../img/fondo-blurry.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; }
+@font-face {
+    font-family: a;
+    src: url(../../fonts/Lato-Black.ttf);
+}
+@font-face {
+    font-family: b;
+    src: url(../../fonts/Lato-Black.ttf);
+}
+.head{  
+    width: 100%;
+    height: 100px;
+    background-color: rgb(24, 28, 32);
+    margin-right: -33px;
+ }
+ 
+ .header{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin: 0px auto;
+     height: 100px;
+     width: 933px;
+ }
+ .arriba{
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+     height: 33px;
+     margin-top: 17px;
+ }
+ /*TAMAÑO LOGOS*/
+ .sociales svg{
+     height: 17px;
+     width: 15px;
+     fill: white;
+ }
+ /*EFECTOS DE LOS LOGOS-----------------------------*/
+ .sociales a{
+     position: relative;
+     font-size: x-small;    
+     padding-top: 11px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: bold;
+     font-size: xx-small;
+     
+ }
+ svg {
+     pointer-events: none;
+   }
+ /*TWITTER----------------------------------------------------------*/
+ .sociales .twitter::before{
+     content: 'Siguenos en X!';
+     visibility: hidden;
+     position: absolute;
+     text-align: center;
+     width: 100px;
+     background-color: grey;
+     text-decoration: none;
+     padding: 4px 4px;
+     border-radius: 2px;
+     color: white;
+     left: -17px;
+     top: 14px;
+     rotate: (33deg);
+     opacity: 0;
+     transition: 0.5s ease;
+ }
+ .sociales .twitter:hover::before{
+     position: absolute;
+     visibility: visible;
+     width: 70px;
+     left: -25px;
+     top: 27px;
+     rotate: (0deg);
+     opacity: 0.75;
+ }
+ .sociales .twitter::after{
+     content: '';
+     visibility: hidden;
+     position: absolute;
+     height: 0;
+     width: 0;   
+     left :2px;
+     top: 7px;
+     rotate: (33deg);
+     opacity: 0;
+     border-left: 6px solid transparent;
+     border-right: 6px solid transparent;
+     border-bottom: 8px solid grey;
+     transition: 0.5s ease;
+ }
+ .sociales .twitter:hover::after{
+     position: absolute;
+     visibility: visible;
+     left: 2px;
+     top: 19px;
+     rotate: (0deg);
+     opacity: 0.75;
+ 
+ }
+ .sociales .twitter:hover svg{
+     fill: grey
+ }
+ /*TWITTER*/
+ 
+ /*IG--------------------------------------------------------------*/
+ .sociales .ig::before{
+     content: 'Siguenos en IG!';
+     visibility: hidden;
+     position: absolute;
+     text-align: center;
+     width: 100px;
+     background-color: hotpink;
+     text-decoration: none;
+     padding: 4px 4px;
+     border-radius: 2px;
+     color: white;
+     left: -17px;
+     top: 14px;
+     rotate: (33deg);
+     opacity: 0;
+     transition: 0.5s ease;
+ }
+ .sociales .ig:hover::before{
+     position: absolute;
+     visibility: visible;
+     width: 70px;
+     left: -25px;
+     top: 27px;
+     rotate: (0deg);
+     opacity: 0.75;
+ }
+ .sociales .ig::after{
+     content: '';
+     visibility: hidden;
+     position: absolute;
+     height: 0;
+     width: 0;   
+     left :2px;
+     top: 7px;
+     rotate: (33deg);
+     opacity: 0;
+     border-left: 6px solid transparent;
+     border-right: 6px solid transparent;
+     border-bottom: 8px solid hotpink;
+     transition: 0.5s ease;
+ }
+ .sociales .ig:hover::after{
+     position: absolute;
+     visibility: visible;
+     left: 2px;
+     top: 19px;
+     rotate: (0deg);
+     opacity: 0.75;
+ 
+ }
+ .sociales .ig:hover svg{
+     fill: hotpink
+ }
+ /*IG--------------------------------------------------------------*/
+ 
+ 
+ /*YT--------------------------------------------------------------*/
+ .sociales .yt::before{
+     content: 'Siguenos en Youtube!';
+     visibility: hidden;
+     position: absolute;
+     text-align: center;
+     width: 133px;
+     background-color: darkred;
+     text-decoration: none;
+     padding: 4px 4px;
+     border-radius: 2px;
+     color: white;
+     left: -17px;
+     top: 14px;
+     rotate: (33deg);
+     opacity: 0;
+     transition: 0.5s ease;
+ }
+ .sociales .yt:hover::before{
+     position: absolute;
+     visibility: visible;
+     width: 100px;
+     left: -25px;
+     top: 27px;
+     rotate: (0deg);
+     opacity: 0.75;
+ }
+ .sociales .yt::after{
+     content: '';
+     visibility: hidden;
+     position: absolute;
+     height: 0;
+     width: 0;   
+     left :22px;
+     top: 7px;
+     rotate: (33deg);
+     opacity: 0;
+     border-left: 6px solid transparent;
+     border-right: 6px solid transparent;
+     border-bottom: 8px solid darkred;
+     transition: 0.5s ease;
+ }
+ .sociales .yt:hover::after{
+     position: absolute;
+     visibility: visible;
+     left: 2px;
+     top: 19px;
+     rotate: (0deg);
+     opacity: 0.75;
+ 
+ }
+ .sociales .yt:hover svg{
+     fill:darkred;
+ }
+ /*YT*---------------------------------------------------------------------/
+ 
+ /*FACEBOOK-----------------------------------------------------------*/
+ 
+ .sociales .fa::before{
+     content: 'Siguenos en Facebook!';
+     position: absolute;
+     visibility: hidden;
+     text-align: center;
+     width: 144px;
+     background-color: blue;
+     text-decoration: none;
+     padding: 4px 4px;
+     border-radius: 2px;
+     color: white;
+     left: -17px;
+     top: 14px;
+     rotate: (33deg);
+     opacity: 0;
+     transition: 0.5s ease;
+ }
+ .sociales .fa:hover::before{
+     position: absolute;
+     visibility: visible;
+     width: 111px;
+     left: -25px;
+     top: 29px;
+     rotate: (0deg);
+     opacity: 0.75;
+ }
+ .sociales .fa::after{
+     content: '';
+     visibility: hidden;
+     position: absolute;
+     height: 0;
+     width: 0;   
+     left :2px;
+     top: 7px;
+     rotate: (33deg);
+     opacity: 0;
+     border-left: 6px solid transparent;
+     border-right: 6px solid transparent;
+     border-bottom: 8px solid blue;
+     transition: 0.5s ease;
+ }
+ .sociales .fa:hover::after{
+     position: absolute;
+     visibility: visible;
+     left: 2px;
+     top: 19px;
+     rotate: (0deg);
+     opacity: 0.75;
+ 
+ }
+ .sociales .fa:hover svg{
+     fill: blue
+ }
+ 
+ /*FACEBOOK------------------------------------------*/
+ 
+ .arriba .sociales a{
+     margin-right: 13px;
+     transform: scale(1,33);
+ }
+ .arriba .log a{
+     text-decoration: none;
+ }
+ .arriba .log .login{
+     color: white;
+     margin-right: 8px;
+     font-size: 14px;
+     font-weight: 700;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .arriba .log .sign{
+     margin-right: 5px;
+     border-radius: 4px;
+     background-color: rgb(29, 29, 129);
+     padding: 9px 9px;
+     color: white;
+     font-size: 14px;
+     font-weight: 700;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ 
+ 
+ .abajo{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    height: 30px;
+    padding: 20px 0px;
+    z-index: 1;
+}
+
+.menu-horizontal{
+   padding: 0px;
+   list-style: none;	
+   display: flex;
+   margin-right: 7px;
+   margin-bottom: 18px;
+   justify-content: center;
+}
+.e{
+   margin-right: 7px;
+}
+.menu-horizontal > li > a{
+   display: block;
+   padding: 0 10px;
+   color: white;
+   text-decoration: none;
+}
+.menu-horizontal > li a:hover{
+   background-color: grey;
+   color: blue;
+}
+.menu-vertical{
+   position: absolute;
+   display: none;
+   list-style: none;
+   padding: 0px;
+   margin: 0px;
+   width: 133px;
+   background-color: rgb(24, 28, 32);
+   margin-top: 3px;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+   display: block;
+   padding-top: 5px;
+}
+
+.menu-vertical li a{
+   display: block;
+   color: white;
+   text-decoration: none;
+   padding: 5px 0px;
+   padding-left: 4px;
+}
+.abajo a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.abajo a::before{
+    content: '';
+    position: absolute;        
+    width: 0%;
+    bottom: -3px;
+    left: 50%;
+    height: 3px;
+    color: white;
+    background-color: blue;
+    transition: 0.33s;
+}
+
+.abajo a:hover::before{
+    width: 100%;
+    left: 0%;
+}
+
+.abajo a:hover {    
+    color: blue;
+    background-color: grey;   
+}
+
+.sociales svg{
+    
+    height: 25px;
+    width: 20x;
+    fill: white;
+}
+svg {
+    pointer-events: none;
+  }
+/* Parte de publicidad------------------------------------------
+------------------------------------------------*/
+ 
+
+
+.publicidad{ 
+    position: relative;
+    bottom: 16px ;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+.publicidad a{
+    text-align: center;
+    font-family:b ;
+    font-weight: bold;
+    font-size: 11px;
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+    z-index: -1;
+}
+.publicidad a p{
+    background-color: rgb(29, 29, 129);
+    padding: 12px 0;
+    padding-top:6px
+}
+.etiqueta{
+    position: relative;
+    top: 6px;
+    height: 20px;
+    width: 20x;
+    margin-right: 8px;
+    color: white;
+    transform: rotate(77deg);
+    
+}
+.etiquetab{
+    position: relative;
+    top: 6px;
+    height: 20px;
+    width: 20x;
+    margin-left: 7px;
+    color: white;
+    transform: rotate(7deg);
+    
+}
+
+
+/*FIN DEL HEADER-------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------*/
+.sectora{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.sectora h2{
+    font-family: b;
+}
+
+.containertxt{
+    width: 100%;
+    height: fit-content;
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+}
+.divtxt{
+    width: 1195px;
+}
+.divtxt p{
+    color: rgba(255, 255, 255, 0.795);
+}
+.divtxt span{
+    color: rgb(39, 223, 39);
+}
+hr{
+    width: 1195px;
+    color: rgba(255, 255, 255, 0.527);
+}
+
+.containerimg{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.divimg{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1200px;
+}
+.divimg h2{
+    margin-left: 3px;
+}
+
+.nascar {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+  
+  
+.columna {
+    position: relative;
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+  
+.columna img {
+    margin-top: 8px;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+.columna a:hover{
+    filter: brightness(0.67);
+}
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+ .columna {
+  flex: 50%;
+   max-width: 50%; }
+}
+  
+
+@media (max-width: 600px) {
+    .columna {
+    flex: 100%;
+    max-width: 100%;
+    }
+}
+
+
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    margin-bottom: -10px;
+}
+.navcontainer{
+    width: 1195px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 33px;
+}
+.navcontainer a{
+    position: relative;
+    text-decoration: none;
+    font-family: b;
+    color: rgba(255, 255, 255, 0.795);
+}
+
+
+/* EFECTOS DEL NAV--------------------------------------------------------
+-----------------------------------------------------------------------*/
+@media (max-width: 800px){
+ .navcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+ }
+}
+
+
+.navcontainer a::before{
+    content: '';
+    position: absolute;        
+    width: 0%;
+    bottom: 7px;
+    left: 0%;
+    height: 2px;
+    color: white;
+    background-color: white;
+    transition: 0.33s;
+}
+
+.navcontainer a:hover::before{
+    width: 100%;
+}
+
+.navcontainer a:hover {    
+    color: white;   
+}

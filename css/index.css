@@ -1,0 +1,1160 @@
+body {
+    overflow-x: hidden; 
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body{
+    overflow-x: hidden; 
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+@font-face {
+    font-family: a;
+    src: url(../fonts/Lato-Black.ttf);
+}
+@font-face {
+    font-family: b;
+    src: url(../fonts/Lato-Black.ttf);
+}
+.head{  
+    width: 100%;
+    height: 100px;
+    background-color: rgb(24, 28, 32);
+    margin-right: -33px;
+}
+ 
+.header{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin: 0px auto;
+     height: 100px;
+     width: 933px;
+}
+.arriba{
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+     height: 33px;
+     margin-top: 17px;
+}
+/*TAMAÑO LOGOS*/
+.sociales svg{
+     height: 17px;
+     width: 15px;
+     fill: white;
+}
+ /*EFECTOS DE LOS LOGOS-----------------------------*/
+.sociales a{
+     position: relative;
+     font-size: x-small;    
+     padding-top: 11px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: bold;
+     font-size: xx-small;
+     
+}
+svg {
+     pointer-events: none;
+}
+ /*TWITTER----------------------------------------------------------*/
+.sociales .twitter::before{
+     content: 'Siguenos en X!';
+     visibility: hidden;
+     position: absolute;
+     text-align: center;
+     width: 100px;
+     background-color: grey;
+     text-decoration: none;
+     padding: 4px 4px;
+     border-radius: 2px;
+     color: white;
+     left: -17px;
+     top: 14px;
+     rotate: (33deg);
+     opacity: 0;
+     transition: 0.5s ease;
+}
+.sociales .twitter:hover::before{
+     position: absolute;
+     visibility: visible;
+     width: 70px;
+     left: -25px;
+     top: 27px;
+     rotate: (0deg);
+     opacity: 0.75;
+}
+.sociales .twitter::after{
+     content: '';
+     visibility: hidden;
+     position: absolute;
+     height: 0;
+     width: 0;   
+     left :2px;
+     top: 7px;
+     rotate: (33deg);
+     opacity: 0;
+     border-left: 6px solid transparent;
+     border-right: 6px solid transparent;
+     border-bottom: 8px solid grey;
+     transition: 0.5s ease;
+}
+.sociales .twitter:hover::after{
+     position: absolute;
+     visibility: visible;
+     left: 2px;
+     top: 19px;
+     rotate: (0deg);
+     opacity: 0.75;
+ 
+}
+.sociales .twitter:hover svg{
+     fill: grey
+}
+/*TWITTER*/
+ 
+/*IG--------------------------------------------------------------*/
+.sociales .ig::before{
+     content: 'Siguenos en IG!';
+     visibility: hidden;
+     position: absolute;
+     text-align: center;
+     width: 100px;
+     background-color: hotpink;
+     text-decoration: none;
+     padding: 4px 4px;
+     border-radius: 2px;
+     color: white;
+     left: -17px;
+     top: 14px;
+     rotate: (33deg);
+     opacity: 0;
+     transition: 0.5s ease;
+}
+.sociales .ig:hover::before{
+     position: absolute;
+     visibility: visible;
+     width: 70px;
+     left: -25px;
+     top: 27px;
+     rotate: (0deg);
+     opacity: 0.75;
+}
+.sociales .ig::after{
+     content: '';
+     visibility: hidden;
+     position: absolute;
+     height: 0;
+     width: 0;   
+     left :2px;
+     top: 7px;
+     rotate: (33deg);
+     opacity: 0;
+     border-left: 6px solid transparent;
+     border-right: 6px solid transparent;
+     border-bottom: 8px solid hotpink;
+     transition: 0.5s ease;
+}
+.sociales .ig:hover::after{
+     position: absolute;
+     visibility: visible;
+     left: 2px;
+     top: 19px;
+     rotate: (0deg);
+     opacity: 0.75;
+ 
+}
+ .sociales .ig:hover svg{
+     fill: hotpink
+}
+ /*IG--------------------------------------------------------------*/
+ 
+ 
+ /*YT--------------------------------------------------------------*/
+.sociales .yt::before{
+     content: 'Siguenos en Youtube!';
+     visibility: hidden;
+     position: absolute;
+     text-align: center;
+     width: 133px;
+     background-color: darkred;
+     text-decoration: none;
+     padding: 4px 4px;
+     border-radius: 2px;
+     color: white;
+     left: -17px;
+     top: 14px;
+     rotate: (33deg);
+     opacity: 0;
+     transition: 0.5s ease;
+}
+.sociales .yt:hover::before{
+     position: absolute;
+     visibility: visible;
+     width: 100px;
+     left: -25px;
+     top: 27px;
+     rotate: (0deg);
+     opacity: 0.75;
+}
+.sociales .yt::after{
+     content: '';
+     visibility: hidden;
+     position: absolute;
+     height: 0;
+     width: 0;   
+     left :22px;
+     top: 7px;
+     rotate: (33deg);
+     opacity: 0;
+     border-left: 6px solid transparent;
+     border-right: 6px solid transparent;
+     border-bottom: 8px solid darkred;
+     transition: 0.5s ease;
+}
+.sociales .yt:hover::after{
+     position: absolute;
+     visibility: visible;
+     left: 2px;
+     top: 19px;
+     rotate: (0deg);
+     opacity: 0.75;
+ 
+}
+.sociales .yt:hover svg{
+     fill:darkred;
+}
+/*YT*---------------------------------------------------------------------/
+ 
+/*FACEBOOK-----------------------------------------------------------*/
+ 
+.sociales .fa::before{
+     content: 'Siguenos en Facebook!';
+     position: absolute;
+     visibility: hidden;
+     text-align: center;
+     width: 144px;
+     background-color: blue;
+     text-decoration: none;
+     padding: 4px 4px;
+     border-radius: 2px;
+     color: white;
+     left: -17px;
+     top: 14px;
+     rotate: (33deg);
+     opacity: 0;
+     transition: 0.5s ease;
+}
+.sociales .fa:hover::before{
+     position: absolute;
+     visibility: visible;
+     width: 111px;
+     left: -25px;
+     top: 29px;
+     rotate: (0deg);
+     opacity: 0.75;
+}
+.sociales .fa::after{
+     content: '';
+     visibility: hidden;
+     position: absolute;
+     height: 0;
+     width: 0;   
+     left :2px;
+     top: 7px;
+     rotate: (33deg);
+     opacity: 0;
+     border-left: 6px solid transparent;
+     border-right: 6px solid transparent;
+     border-bottom: 8px solid blue;
+     transition: 0.5s ease;
+}
+.sociales .fa:hover::after{
+     position: absolute;
+     visibility: visible;
+     left: 2px;
+     top: 19px;
+     rotate: (0deg);
+     opacity: 0.75;
+ 
+}
+.sociales .fa:hover svg{
+     fill: blue
+}
+ 
+ /*FACEBOOK------------------------------------------*/
+ 
+.arriba .sociales a{
+     margin-right: 13px;
+     transform: scale(1,33);
+}
+.arriba .log a{
+     text-decoration: none;
+}
+.arriba .log .login{
+     color: white;
+     margin-right: 8px;
+     font-size: 14px;
+     font-weight: 700;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.arriba .log .sign{
+     margin-right: 5px;
+     border-radius: 4px;
+     background-color: rgb(29, 29, 129);
+     padding: 9px 9px;
+     color: white;
+     font-size: 14px;
+     font-weight: 700;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+ 
+ 
+.abajo{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    height: 30px;
+    padding: 20px 0px;
+    z-index: 1;
+}
+
+.menu-horizontal{
+   padding: 0px;
+   list-style: none;	
+   display: flex;
+   margin-right: 7px;
+   margin-bottom: 18px;
+   justify-content: center;
+}
+.e{
+   margin-right: 7px;
+}
+.menu-horizontal > li > a{
+   display: block;
+   padding: 0 10px;
+   color: white;
+   text-decoration: none;
+}
+.menu-horizontal > li a:hover{
+   background-color: grey;
+   color: blue;
+}
+.menu-vertical{
+   position: absolute;
+   display: none;
+   list-style: none;
+   padding: 0px;
+   margin: 0px;
+   width: 133px;
+   background-color: rgb(24, 28, 32);
+   margin-top: 3px;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+   display: block;
+   padding-top: 5px;
+}
+
+.menu-vertical li a{
+   display: block;
+   color: white;
+   text-decoration: none;
+   padding: 5px 0px;
+   padding-left: 4px;
+}
+.abajo a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.abajo a::before{
+    content: '';
+    position: absolute;        
+    width: 0%;
+    bottom: -3px;
+    left: 50%;
+    height: 3px;
+    color: white;
+    background-color: blue;
+    transition: 0.33s;
+}
+
+.abajo a:hover::before{
+    width: 100%;
+    left: 0%;
+}
+
+.abajo a:hover {    
+    color: blue;
+    background-color: grey;   
+}
+
+.sociales svg{
+    
+    height: 25px;
+    width: 20x;
+    fill: white;
+}
+svg {
+    pointer-events: none;
+  }
+/* Parte de publicidad------------------------------------------
+------------------------------------------------*/
+ 
+
+
+.publicidad{ 
+    position: relative;
+    bottom: 16px ;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+.publicidad a{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family:b ;
+    font-weight: bold;
+    font-size: 11px;
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+    z-index: -1;
+}
+.publicidad a p{
+    background-color: rgb(29, 29, 129);
+    padding: 12px 0;
+    padding-top:6px
+}
+.etiqueta{
+    position: relative;
+    top: 6px;
+    height: 20px;
+    width: 20x;
+    margin-right: 8px;
+    color: white;
+    transform: rotate(77deg);
+    
+}
+.etiquetab{
+    position: relative;
+    top: 6px;
+    height: 20px;
+    width: 20x;
+    margin-left: 7px;
+    color: white;
+    transform: rotate(7deg);
+    
+}
+
+
+/*FIN DEL HEADER-------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------*/
+----------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------SECTOR A HOME------------------------------------*/
+
+.sectora{   
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto; 
+}
+
+/* --------------------------container a parte de arriba---------------------------*/
+
+.sectora{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto; 
+}
+.containera{
+    height: 117vh;
+    width: 100%;    
+    background-image: url(../img/1.1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.containeratxt{
+    height:100%;
+    width: 1433px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.containeratxta{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 300px;
+    width: 700px;
+    margin-top: 100px;
+}
+.containeratxtb{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 433px;
+    margin-left: 633px;
+    height: 300px;
+    width: 700px;
+    flex-shrink: 1;
+    
+}
+/*estilos 1----------------------------------------------------------------------------*/
+.containeratxtah{
+    color: white;
+    line-height: 1.099;
+    font-family: a ;
+    font-weight: bolder;
+    font-size: 30px;    
+}
+
+.containeratxtap{
+    color: rgba(255, 255, 255, 0.877);
+    line-height: 1.4;
+    font-family: b ;
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: -33px;
+    margin-bottom: 19px;
+}
+.containeratxtaa a{
+    
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgb(54, 56, 202) 0.1%, rgb(12, 12, 70) 100.2% );;
+    border-radius: 9px;
+    padding: 18px 22px;
+    text-decoration: none;
+    font-family: b ;
+    font-weight: bolder;
+    font-size: 15px;
+    color: white;
+}
+/*Estilos 2 ---------------------------------------------------------------------------*/
+
+
+.containeratxtbh{
+    color: white;
+    line-height: 1.099;
+    font-family: b ;
+    font-weight: bolder;
+    font-size: 22px;
+}
+.containeratxtbp{
+    color: rgba(255, 255, 255, 0.877);
+    line-height: 1.4;
+    font-family: b ;
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: -22px;
+    margin-bottom: 19px;
+
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------
+-------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Containerb parte de abajo------------------------------------------------------------------------------*/
+
+.parteabajo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;    
+    height: 533px;
+    background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(39, 40, 41, 0.959) 0%, rgb(15, 15, 15)  );
+}
+.up{
+    margin-top: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 67px;
+    width: 1433px;
+
+}
+.upa h2{
+    color: white;
+    line-height: 1.099;
+    font-family: b ;
+    font-weight: bolder;
+    font-size: 27px;
+}
+
+.down{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+    align-items: center;
+    height: 460px;
+    width: 1433px;
+
+}
+
+
+/*-------------------------CARTAS------------------------------------------*/
+
+
+.maincontainera
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 283px;
+    height: 333px;
+}
+.fronta
+{
+    font-family: b;
+    background-image: url(../img/00.png);
+    font-size: 13px;
+    border-radius: 7px;
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    width: 283px;
+    height: 333px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: all .5s linear 0s;
+}
+.backa
+{
+    font-family: b;
+    position: absolute;
+    background-image: url(../img/Screenshot\ 2024-10-28\ 175122.png);
+    border-radius: 7px;
+    transform: perspective(600px) rotateY(180deg);
+    width: 283px; 
+    height: 333px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: all .5s linear 0s;
+}
+
+.maincontainera:hover .fronta
+{
+    transform: rotateY(-180deg);
+}
+.maincontainera:hover .backa
+{
+    transform: rotateY(0deg);
+}
+.fronta h2{
+    margin-top: 90px;
+    color: white;
+    text-align: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    background-color: rgba(95, 89, 89, 0.669);
+    padding: 7px 3px;
+    border-radius: 5px;
+}
+.backa h2 {
+    margin-top: 17px;
+    text-align: center ;
+    color: white;
+    font-family: b;
+    font-size: 17px;
+}
+.backa p {
+    font-family: b;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-justify:auto;
+}
+
+
+
+
+
+
+.maincontainerb
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 283px;
+    height: 333px;
+}
+
+.frontb
+{   
+    font-size: 13px;
+    font-family: b;
+    border-radius: 7px;
+    background-image: url(../img/10.png);
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    width: 283px;
+    height: 333px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: all .5s linear 0s;
+}
+.backb
+{
+    font-family: b;
+    background-image: url(../img/Screenshot\ 2024-10-28\ 175122.png);
+    position: absolute;
+    border-radius: 7px;
+    transform: perspective(600px) rotateY(180deg);
+    width: 283px; 
+    height: 333px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: all .5s linear 0s;
+}
+
+
+.maincontainerb:hover .frontb
+{
+    transform: rotateY(-180deg);
+}
+
+.maincontainerb:hover .backb
+{
+    transform: rotateY(0deg);
+}
+.frontb h2 {
+    margin-top: 85px;
+    color: white;
+    text-align: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    background-color: rgba(95, 89, 89, 0.669);
+    padding: 7px 3px;
+    border-radius: 5px;
+}
+.backb h2 {
+    margin-top: 17px;
+    text-align: center ;
+    color: white;
+    font-family: b;
+    font-size: 17px;
+}
+.backb p {
+    font-family: b;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    text-justify:auto;
+}
+.ala{
+    position: absolute
+}
+
+
+
+
+.maincontainerc
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 283px;
+    height: 333px;
+}
+
+.frontc
+{   
+    font-size: 13px;
+    font-family: b;
+    background-image: url(../img/20.png);
+    border-radius: 7px;
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    width: 283px;
+    height: 333px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: all .5s linear 0s;
+}
+.backc
+{
+    font-family: b;
+    background-image: url(../img/Screenshot\ 2024-10-28\ 175122.png);
+    position: absolute;
+    border-radius: 7px;
+    transform: perspective(600px) rotateY(180deg);
+    width: 283px; 
+    height: 333px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: all .5s linear 0s;
+}
+
+.maincontainerc:hover .frontc
+{
+    transform: rotateY(-180deg);
+}
+
+.maincontainerc:hover .backc
+{
+    transform: rotateY(0deg);
+}
+
+.frontc h2{
+    margin-top: 40px;
+    margin-right: 250px;
+    color: white;
+    text-align: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    background-color: rgba(95, 89, 89, 0.669);
+    padding: 7px 3px;
+    border-radius: 5px;
+  
+}
+.backc h2{
+    color: white;
+    font-size: 17px;
+    font-family: b;
+    text-align: center;
+}
+.backc p{
+    color: white;
+    font-size: 13px;
+    font-family: b;
+    text-align: center;
+    text-justify: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------sector b home -------------------------------------------------*/
+
+
+.sectorb{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto; 
+}   
+.containerb{
+    height: 77vh;
+    width: 100%;    
+    background-image: url(../img/imola.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.containerbtxt{
+    height:100%;
+    width: 1433px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.containerbtxta p{
+    color: rgba(255, 255, 255, 0.877);
+    line-height: 1.4;
+    font-family: b ;
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: -10px;
+}
+.containerbtxta h2{
+    font-family: b;
+    font-weight: bolder;
+    font-size: 33px;
+    color: white;
+}
+.linktrack{
+    margin-top: -15px;
+    text-decoration: none;
+}
+.linktrack a{
+    text-decoration: none;
+}
+.linktrack p{
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgb(54, 56, 202) 0.1%, rgb(12, 12, 70) 100.2% );;
+    border-radius: 6px;
+    padding: 13px 20px;
+    text-decoration: none;
+    font-family: b ;
+    font-weight: bolder;
+    font-size: 17px;
+    color: white;
+}
+
+
+
+
+
+/*Parte de abajo sector 2 --------------------------------------*/
+.footsecb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 300px;
+    width: 100%;
+    background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(39, 40, 41, 0.959) 0%, rgb(15, 15, 15)  );
+}
+.containerfootsecb{
+    height: 280px;
+    width: 1433px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: right;
+}
+
+.upfootsecb{
+    margin-top:22px;
+    height: 100px;
+    width: 100%;
+    color: white;
+    font-family: b;
+    font-weight: normal;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: -20px;
+    text-align: left;
+}
+
+
+.slider{
+    margin-bottom: 27px;
+    width: 100%;
+    height: var(--height);
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 10% 90%,
+        transparent);
+}
+.slider .list{
+    display: flex;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+}
+.slider .list .item{
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 33s linear infinite;
+    transition: filter 0.5s;
+    animation-delay: calc( (33s / var(--quantity)) * (var(--position) - 1) - 33s);
+}
+.slider .list .item img{
+    width: 100%;
+}
+@keyframes autoRun{
+    from{
+        left: 100%;
+    }to{
+        left: calc(var(--width) * -1);
+    }
+}
+.slider:hover .item{
+    animation-play-state: paused;
+    filter: grayscale(1);
+}
+.slider .item:hover{
+    filter: grayscale(0);
+    }
+
+
+
+/*----------Parte 3 home (C)----------------------------------------------------
+---------------------------------------------------------------------------------*/
+
+
+
+
+
+.sectorc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto; 
+}   
+.containerc{
+    height: 77vh;
+    width: 100%;    
+    background-image: url(../img/9560474.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.containerctxt{
+    height:100%;
+    width: 1433px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.containerctxta p{
+    color: rgba(255, 255, 255, 0.877);
+    line-height: 1.4;
+    font-family: b ;
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: -10px;
+}
+.containerctxta h2{
+    font-family: b;
+    font-weight: bolder;
+    font-size: 33px;
+    color: white;
+}
+.linkcar{
+    margin-top: -15px;
+    margin-right: 7px;
+    text-decoration: none;
+}
+.linkcar a{
+    text-decoration: none;
+}
+.linkcar p{
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgb(54, 56, 202) 0.1%, rgb(12, 12, 70) 100.2% );;
+    border-radius: 6px;
+    padding: 13px 22px;
+    text-decoration: none;
+    font-family: b ;
+    font-weight: bolder;
+    font-size: 17px;
+    color: white;
+}
+
+
+
+
+
+/*Parte de abajo sector 3(C)--------------------------------------*/
+.footsecc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 300px;
+    width: 100%;
+    background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgb(52, 53, 54) 0%, rgb(15, 15, 15)  );
+}
+.containerfootsecc{
+    height: 280px;
+    width: 1433px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.upfootsecc{
+    margin-top:22px;
+    height: 100px;
+    width: 100%;
+    color: white;
+    font-family: b;
+    font-weight: normal;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: -20px;
+    text-align: right;
+}
+ 
+
+
+
+  
